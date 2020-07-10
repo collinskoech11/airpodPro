@@ -6,19 +6,32 @@ const section = document.querySelector('section');
 const end = section.querySelector('h1');
 
 //scroll magic
-const controller = new ScrollMagic.Controller();
+let controller = new ScrollMagic.Controller();
 //scenes
-const scene = new ScrollMagic.Scene({
+let scene = new ScrollMagic.Scene({
 	duration:9000,
-	triggerElemnt: intro,
-	triggerHook: 0
+	triggerElement: intro,
+	triggerHook: 0	
 })
  .addIndicators()
  .setPin(intro)
  .addTo(controller);
+
+
+//text animation
+let textAnim = TweenMax.fromTo(text, 3,{opacity:0},{opacity:1});
+let scene2 = new ScrollMagic({
+	duration:3000,
+	triggerElement: intro,
+	triggerHook:0
+})
+.setTween(textAnim)
+.addTo(controller);
+
+
 //video animation
 
-let accelamount = 0.5;
+let accelamount = 0.2;
 let scrollpos = 0;
 let delay = 0;
 
