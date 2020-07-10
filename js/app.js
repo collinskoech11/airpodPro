@@ -19,7 +19,7 @@ let scene = new ScrollMagic.Scene({
 
 
 //text animation
-let textAnim = TweenMax.fromTo(text, 3,{opacity:0},{opacity:1});
+/**let textAnim = TweenMax.fromTo(text, 3,{opacity:0},{opacity:1});
 let scene2 = new ScrollMagic({
 	duration:3000,
 	triggerElement: intro,
@@ -27,7 +27,7 @@ let scene2 = new ScrollMagic({
 })
 .setTween(textAnim)
 .addTo(controller);
-
+**/
 
 //video animation
 
