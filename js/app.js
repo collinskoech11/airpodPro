@@ -9,7 +9,7 @@ const end = section.querySelector('h1');
 let controller = new ScrollMagic.Controller();
 //scenes
 let scene = new ScrollMagic.Scene({
-	duration:9000,
+	duration:3000,
 	triggerElement: intro,
 	triggerHook: 0	
 })
@@ -38,7 +38,6 @@ let delay = 10;
 
 scene.on("update", e =>{
 	scrollpos = e.scrollPos / 1000;
-	
 });
 
 setInterval(() => {
