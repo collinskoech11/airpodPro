@@ -31,9 +31,9 @@ let scene2 = new ScrollMagic({
 
 //video animation
 
-let accelamount = 9;
+let accelamount = 2;
 let scrollpos = 0;
-let delay = 10;
+let delay = 3;
 
 
 scene.on("update", e =>{
